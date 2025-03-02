@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Future of Coding with AI</title>
+  <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/night.css">
+  <link rel="stylesheet" href="/node_modules/reveal.js/plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Title Slide -->
+      <section data-background-gradient="linear-gradient(to bottom right, #3498db, #8e44ad)">
+        <h1>The Future of Coding with AI</h1>
+        <h3>Transforming Software Development</h3>
+        <p><small>Created with Reveal.js</small></p>
+      </section>
+
+      <!-- Introduction -->
+      <section>
+        <h2>What We'll Cover</h2>
+        <ul>
+          <li>AI-Assisted Coding: What Is It?</li>
+          <li>Current AI Coding Tools</li>
+          <li>Practical Applications</li>
+          <li>Benefits & Challenges</li>
+          <li>Future Possibilities</li>
+          <li>How to Get Started</li>
+        </ul>
+      </section>
+
+      <!-- AI-Assisted Coding -->
+      <section>
+        <section>
+          <h2>AI-Assisted Coding</h2>
+          <p>Using artificial intelligence to enhance the software development process</p>
+          <img src="images/ai-coding.jpg" alt="AI Coding Illustration" style="height: 300px; margin: 0 auto; background: none; border: none; box-shadow: none;">
+        </section>
+        
+        <section>
+          <h3>Key Components</h3>
+          <ul>
+            <li>Code Completion</li>
+            <li>Code Generation</li>
+            <li>Bug Detection & Fixing</li>
+            <li>Code Refactoring</li>
+            <li>Natural Language to Code Translation</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Current AI Tools -->
+      <section>
+        <section>
+          <h2>Current AI Coding Tools</h2>
+          <div class="tool-grid">
+            <div class="tool">
+              <h4>GitHub Copilot</h4>
+              <p>AI pair programmer that suggests code as you type</p>
+            </div>
+            <div class="tool">
+              <h4>ChatGPT / GPT-4</h4>
+              <p>Conversational AI that can generate and explain code</p>
+            </div>
+            <div class="tool">
+              <h4>Tabnine</h4>
+              <p>AI code completion assistant</p>
+            </div>
+            <div class="tool">
+              <h4>Amazon CodeWhisperer</h4>
+              <p>AI coding companion for AWS development</p>
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <h3>IDE Integrations</h3>
+          <ul>
+            <li>Visual Studio Code</li>
+            <li>JetBrains IDEs</li>
+            <li>Visual Studio</li>
+            <li>Neovim</li>
+            <li>Web-based editors</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Code Example -->
+      <section>
+        <h2>AI Code Generation Example</h2>
+        <pre><code class="javascript" data-trim data-line-numbers>
+// Prompt: "Create a function to fetch data from an API and handle errors"
+
+async function fetchDataFromAPI(url) {
+  try {
+    const response = await fetch(url);
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    throw error;
+  }
+}
+
+// Usage
+fetchDataFromAPI('https://api.example.com/data')
+  .then(data => console.log('Data received:', data))
+  .catch(error => console.error('Failed to fetch data:', error));
+        </code></pre>
+      </section>
+
+      <!-- Practical Applications -->
+      <section>
+        <section>
+          <h2>Practical Applications</h2>
+          <p>How AI is transforming real-world development</p>
+        </section>
+        
+        <section>
+          <h3>Rapid Prototyping</h3>
+          <ul>
+            <li>Generate boilerplate code</li>
+            <li>Create MVPs quickly</li>
+            <li>Test ideas with minimal effort</li>
+          </ul>
+          <aside class="notes">
+            AI can generate entire application structures in seconds, allowing developers to focus on unique business logic.
+          </aside>
+        </section>
+        
+        <section>
+          <h3>Learning & Skill Development</h3>
+          <ul>
+            <li>Learn new languages/frameworks</li>
+            <li>Get explanations for complex code</li>
+            <li>Discover best practices</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h3>Code Maintenance</h3>
+          <ul>
+            <li>Automated refactoring</li>
+            <li>Documentation generation</li>
+            <li>Legacy code modernization</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Benefits & Challenges -->
+      <section data-background="#2c3e50">
+        <section>
+          <h2>Benefits</h2>
+          <ul>
+            <li class="fragment">Increased productivity</li>
+            <li class="fragment">Reduced repetitive tasks</li>
+            <li class="fragment">Faster onboarding for new technologies</li>
+            <li class="fragment">More accessible programming</li>
+            <li class="fragment">Consistent code quality</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>Challenges</h2>
+          <ul>
+            <li class="fragment">Over-reliance on AI suggestions</li>
+            <li class="fragment">Security and privacy concerns</li>
+            <li class="fragment">Code quality and correctness</li>
+            <li class="fragment">Intellectual property issues</li>
+            <li class="fragment">Skill atrophy</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Future Possibilities -->
+      <section>
+        <section>
+          <h2>Future Possibilities</h2>
+          <p>Where AI-assisted coding is headed</p>
+        </section>
+        
+        <section>
+          <h3>Natural Language Programming</h3>
+          <p>Describing software in plain language</p>
+          <pre><code class="language-text" data-trim>
+"Create a web app that lets users upload images, 
+apply filters, and share them on social media"
+          </code></pre>
+          <p class="fragment">↓</p>
+          <p class="fragment">Fully functional application</p>
+        </section>
+        
+        <section>
+          <h3>Autonomous Bug Fixing</h3>
+          <ul>
+            <li>AI that detects, diagnoses, and fixes bugs</li>
+            <li>Self-healing systems</li>
+            <li>Continuous code improvement</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h3>AI-Driven Architecture</h3>
+          <ul>
+            <li>Optimizing system design</li>
+            <li>Suggesting architectural improvements</li>
+            <li>Adapting to changing requirements</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Getting Started -->
+      <section>
+        <h2>How to Get Started</h2>
+        <ol>
+          <li>Experiment with GitHub Copilot or ChatGPT</li>
+          <li>Install AI coding extensions for your IDE</li>
+          <li>Practice prompt engineering for code generation</li>
+          <li>Join AI coding communities</li>
+          <li>Balance AI assistance with critical thinking</li>
+        </ol>
+      </section>
+
+      <!-- Conclusion -->
+      <section data-background-gradient="linear-gradient(to bottom right, #8e44ad, #3498db)">
+        <h2>The Future is Collaborative</h2>
+        <p>AI won't replace developers, but developers who use AI will replace those who don't.</p>
+        <p>The most powerful combination is human creativity with AI assistance.</p>
+        <h3>Thank You!</h3>
+        <p><small>Questions?</small></p>
+      </section>
+    </div>
+  </div>
+
+  <script type="module">
+    import Reveal from '/node_modules/reveal.js/dist/reveal.esm.js';
+    import Markdown from '/node_modules/reveal.js/plugin/markdown/markdown.esm.js';
+    import Highlight from '/node_modules/reveal.js/plugin/highlight/highlight.esm.js';
+    import Notes from '/node_modules/reveal.js/plugin/notes/notes.esm.js';
+    import Zoom from '/node_modules/reveal.js/plugin/zoom/zoom.esm.js';
+
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      transition: 'slide',
+      plugins: [Markdown, Highlight, Notes, Zoom]
+    });
+  </script>
+</body>
+</html>
